@@ -1,0 +1,71 @@
+{% extends 'index.html'%}
+{% block content %}
+{% csrf_token %}
+<h1>Add Designs</h1>
+<div class="card">
+<form action="/designupload" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="file">
+    <button type="submit">Upload</button>
+</form>
+</div>  
+<h1>Designs</h1>
+                <i class="fa fa-solid fa fa-palette fa-2"></i>
+              </div>
+              <div class="main-skills">
+                <div class="card">
+                  <i class="fa fa-solid fa fa-palette fa-2"></i>
+                  <h3>Design example</h3>
+                  <!-- <p>Join Over 1 million Students.</p> -->
+                  <button>View</button>
+                </div>
+                <div class="card">
+                    <i class="fa fa-solid fa fa-palette fa-2"></i>
+                    <h3>Design example</h3>
+                    <!-- <p>Join Over 1 million Students.</p> -->
+                    <button>View</button>
+                </div>
+                <div class="card">
+                    <i class="fa fa-solid fa fa-palette fa-2"></i>
+                    <h3>Design example</h3>
+                    <!-- <p>Join Over 1 million Students.</p> -->
+                    <button>View</button>
+                </div>
+                <div class="card">
+                    <i class="fa fa-solid fa fa-palette fa-2"></i>
+                    <h3>Design example</h3>
+                    <!-- <p>Join Over 1 million Students.</p> -->
+                    <button>View</button>
+                </div>
+              </div>
+        
+              <section class="main-course">
+                <h1>Top Selling Designs</h1>
+                <div class="course-box">
+                  <ul>
+                    <li class="active">On sale</li>
+                    <li>explore</li>
+                    <li>incoming</li>
+                    <li>finished</li>
+                  </ul>
+                  <div class="course">
+                    <div class="box">
+                      <h3>Design 1</h3>
+                      <p>Insert img here</p>
+                      <button>continue</button>
+                      <i class="fa-solid fa-palette fa-fade fa-1"></i>
+                    </div>
+                    <div class="box">
+                        <h3>Design 2</h3>
+                        <p>Insert img here</p>
+                        <button>continue</button>
+                        <i class="fa-solid fa-palette fa-fade fa-1"></i>
+                    </div>
+                    <div class="box">
+                        <h3>Design 3</h3>
+                        <p>Insert img here</p>
+                        <button>continue</button>
+                        <i class="fa-solid fa-palette fa-fade fa-1"></i>
+                    </div>
+                  </div>
+{% endblock %}                

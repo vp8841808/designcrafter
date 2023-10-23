@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADmin Panel !</title>
+    <script type="text/javascript" src="/static/JS/style.js"></script>
+    <link rel ="stylesheet" href="/static/CSS/style.css" />
+    <link 
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        </head>
+        <body>
+          <div class="container">
+            <nav>
+              <ul>
+                <li><a href="#" class="logo">
+                  <img src="/static/Images/PXL_04-10-2023_08-39-04_8.3.252~2.jpg" alt="">
+                  <span class="nav-item">Dashboard</span>
+                </a></li>
+                <li><a href="#">
+                  <i class="fas fa-home"></i>
+                  <span class="nav-item">Home</span>
+                </a></li>
+                <li><a href="">
+                  <i class="fas fa-user"></i>
+                  <span class="nav-item">Profile</span>
+                </a></li>
+                <li><a href="/desgignuploadpage">
+                  <i class="fas fa-image"></i>
+                  <span class="nav-item">Designs</span>
+                <!-- </a></li>
+                <li><a href="">
+                  <i class="fas fa-chart-bar"></i>
+                  <span class="nav-item">Analytics</span>
+                </a></li>
+                <li><a href="">
+                  <i class="fas fa-tasks"></i>
+                  <span class="nav-item">Tasks</span>
+                </a></li> -->
+                <li><a href="">
+                  <i class="fas fa-cog"></i>
+                  <span class="nav-item">Settings</span>
+                </a></li>
+                <li><a href="">
+                  <i class="fas fa-question-circle"></i>
+                  <span class="nav-item">Help</span>
+                </a></li>
+                <li><a href="" class="logout">
+                  <i class="fas fa-sign-out-alt"></i>
+                  <span class="nav-item">Log out</span>
+                </a></li>
+              </ul>
+            </nav>
+        
+            <section class="main">
+              <div class="content-wrapper">
+                {% block content %}
+                {% endblock%}
+              </div>
+              <div class="main-top">
+                </div>
+              </section>
+            </section>
+          </div>
+        </body>
+        </html>
